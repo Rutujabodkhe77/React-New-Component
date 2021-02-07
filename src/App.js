@@ -1,25 +1,24 @@
-import logo from './logo.svg';
-import './App.css';
+import './rutuja.css';
+// import About from './About.js';
+// import About from './Components/About.js';
+import About from './Components/Screens/About.js';
+import Myinformation from './Components/Myinformation.js';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//****first div for rutuja.css***
+  <div > 
+          <h2>props exchange value between App .js and Component.js </h2> 
+
+ {/* *****This is for ins about.css***** */}
+  <About> </About>
+
+<Myinformation name="rutuja" age="21" ></Myinformation>
+<Myinformation name="Pooja" age="24"></Myinformation>
+<Myinformation name="Pratiksha" age="24" ></Myinformation>
+<Myinformation name="Sneha" age="24"></Myinformation>
+</div> 
+);
 }
 
 export default App;
